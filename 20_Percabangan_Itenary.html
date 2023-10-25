@@ -8,7 +8,7 @@
 <body>
   <script>
     var jawab = prompt("apakah jakarta ibukota Indonesia?");
-    var jawaban = (jawab.toLocaleUpperCase()=="IYA","YES") ?"Benar":"Salah";
+    var jawaban = (jawab.toLocaleUpperCase()=="IYA" || jawab.toLocaleUpperCase() =="YES") ?"Benar":"Salah";
     document.write(`Jawaban anda : <b>${jawaban}</b>`);
   </script>
 </body>

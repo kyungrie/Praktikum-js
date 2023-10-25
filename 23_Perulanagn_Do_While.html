@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>23_Perulanagn_Do_While</title>
+</head>
+<body>
+  <script>
+    var ulangi = confirm("Apakah anda mau mengulang?");
+    var counter = 0;
+
+    while (ulangi) {
+      var jawab = confirm("Apakah anda mau mengulangi?")
+      
+        do{
+          counter++;
+          ulangi = confirm("Apakah anda mau mengulangi?");
+        }while (ulangi)
+      
+    }
+
+      document.write("Perulanagan sudah dilakukan sebanyak " + counter +" kali");
+      
+  </script>
+</body>
+</html>
