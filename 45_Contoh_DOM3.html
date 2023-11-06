@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>45_Contoh_DOM3</title>
+</head>
+<body>
+  <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Eos nobis minus labore. Tempora labore fuga itaque, quod optio quam laborum amet mollitia molestiae,
+     nesciunt quos voluptates maxime rerum, libero nulla a dicta aliquam eos inventore ex harum cumque impedit! 
+     Omnis perferendis velit voluptatibus neque alias ab vitae unde in impedit.</p>
+
+     <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Eos nobis minus labore. Tempora labore fuga itaque, quod optio quam laborum amet mollitia molestiae,
+     nesciunt quos voluptates maxime rerum, libero nulla a dicta aliquam eos inventore ex harum cumque impedit! 
+     Omnis perferendis velit voluptatibus neque alias ab vitae unde in impedit.</p>
+
+     <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Eos nobis minus labore. Tempora labore fuga itaque, quod optio quam laborum amet mollitia molestiae,
+     nesciunt quos voluptates maxime rerum, libero nulla a dicta aliquam eos inventore ex harum cumque impedit! 
+     Omnis perferendis velit voluptatibus neque alias ab vitae unde in impedit.</p>
+  <script>
+    var paragraf = document.getElementsByClassName("paragraf");
+    setInterval(function () {
+      paragraf[0].style.color = "red";
+      paragraf[1].style.color = "green";
+      paragraf[2].style.color = "blue";
+
+      setTimeout(function () {
+        paragraf[0].style.color = "black";
+        paragraf[1].style.color = "black";
+        paragraf[2].style.color = "black";
+      },500)
+    },1000);
+  </script>
+</body>
+</html>
